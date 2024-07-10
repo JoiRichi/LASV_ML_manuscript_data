@@ -1,22 +1,31 @@
-# LASV_ML_manuscript_data
-LASV manuscript data
+# LASV_ML_Manuscript_Data
 
-This is one out of 3 for the manuscript suporting data and code.
-all here:
+## Overview
+This repository contains the data and code supporting the LASV manuscript. It is one of three repositories associated with the project. For complete project details, see the links below:
 
-## Complete links
+## Project Repositories
+- **Data and Processing:** [LASV_ML_Manuscript_Data](https://github.com/JoiRichi/LASV_ML_manuscript_data)
+- **Lassa Virus Phylogenetics:** [LASV_Phylogenetics_Pipeline](https://github.com/JoiRichi/LASV_phylogenetics_pipeline)
+- **Lassa Virus Lineage Prediction:** [LASV_Lineage_Prediction](https://github.com/JoiRichi/LASV_lineage_pred)
 
-- [Data and process](https://github.com/JoiRichi/LASV_ML_manuscript_data)
-- [Lassa Virus Phylogenetics](https://github.com/JoiRichi/LASV_phylogenetics_pipeline)
-- [lassa virus lineage prediction](https://github.com/JoiRichi/LASV_lineage_pred)
+## Jupyter Notebooks on Google Colab
+- **General Preprocessing:** [Notebook Link](https://colab.research.google.com/drive/1JOgS2-dDoQ7OPHPcXm3AIBDnGQAFxIyR#scrollTo=Jt9K0fapjEAl)
+- **Motif Search Using RF MD Pcorr:** [Notebook Link](https://colab.research.google.com/drive/1M1yYB65MOWUpMYcn24Jfm6jvZZ13QJ6l#scrollTo=fa1z1eH6nCxu)
+- **Lassa Virus Lineage Prediction Training:** [Notebook Link](https://colab.research.google.com/drive/1G0lEjuvPR07bcb181Rfhm-S0WenMFSmR#scrollTo=yqu1klvB3WjE)
 
-prepro
-https://colab.research.google.com/drive/1JOgS2-dDoQ7OPHPcXm3AIBDnGQAFxIyR#scrollTo=Jt9K0fapjEAl
+## Repository Structure
+This repository stores all data and intermediates related to the project.
 
-RF_proper
-https://colab.research.google.com/drive/1G0lEjuvPR07bcb181Rfhm-S0WenMFSmR#scrollTo=yqu1klvB3WjE
+### Directories and Contents
 
+- **raw_ncbi**: Contains nucleotide sequences and accompanying metadata of all Lassa virus sequences available on NCBI Virus until 01/12/2023.
+  
+- **last_mafft_alignment**: Contains the aligned extracted GPC sequences using LAST and MAFFT, available [here](https://mafft.cbrc.jp/alignment/server/specificregion-last.html). [Reference gene] (https://github.com/JoiRichi/LASV_phylogenetics_pipeline/blob/main/config/gly_ref_LASV.gb).The alignment file and raw metadata file (stored in raw_ncbi) serve as inputs for the [General Preprocessing](https://colab.research.google.com/drive/1JOgS2-dDoQ7OPHPcXm3AIBDnGQAFxIyR#scrollTo=Jt9K0fapjEAl) notebook.
+  
+- **alignment_preprocessing**: Contains outputs from the [General Preprocessing](https://colab.research.google.com/drive/1JOgS2-dDoQ7OPHPcXm3AIBDnGQAFxIyR#scrollTo=Jt9K0fapjEAl) notebook. The alignment from MAFFT was filtered to produce passed files, which were manually curated and translated to amino acids using Aliview. These files are inputs for the [Lassa Virus Phylogenetics](https://github.com/JoiRichi/LASV_phylogenetics_pipeline) pipeline, [Motif Search Using RF MD Pcorr](https://colab.research.google.com/drive/1M1yYB65MOWUpMYcn24Jfm6jvZZ13QJ6l#scrollTo=fa1z1eH6nCxu), and [Lassa Virus Lineage Prediction Training](https://colab.research.google.com/drive/1G0lEjuvPR07bcb181Rfhm-S0WenMFSmR#scrollTo=yqu1klvB3WjE) notebooks.
+  
+- **result_motiff_search**: Contains results from the [Motif Search Using RF MD Pcorr](https://colab.research.google.com/drive/1M1yYB65MOWUpMYcn24Jfm6jvZZ13QJ6l#scrollTo=fa1z1eH6nCxu) notebook.
+  
+- **lineage_annotation**: Contains sequence IDs grouped into lineages based on annotated clades from the [Lassa Virus Phylogenetics](https://github.com/JoiRichi/LASV_phylogenetics_pipeline) analysis. These files contain target variables for the [Lassa Virus Lineage Prediction Training](https://colab.research.google.com/drive/1G0lEjuvPR07bcb181Rfhm-S0WenMFSmR#scrollTo=yqu1klvB3WjE) notebook.
 
-Pcorr
-
-https://colab.research.google.com/drive/1M1yYB65MOWUpMYcn24Jfm6jvZZ13QJ6l#scrollTo=fa1z1eH6nCxu
+For further details, please refer to the respective notebooks and repositories linked above.
