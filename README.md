@@ -26,7 +26,7 @@ This repository stores all data and intermediates related to the project.
   
 - **result_motiff_search**: Contain results from the [Motif Search Using RF MD Pcorr](https://colab.research.google.com/drive/1M1yYB65MOWUpMYcn24Jfm6jvZZ13QJ6l) notebook.
 
-- **phylo_tree**: Contain result from the [LASV_Phylogenetics_Pipeline](https://github.com/JoiRichi/LASV_phylogenetics_pipeline). Please open the tree file using https://auspice.us/
+- **phylo_tree**: Contain result from the [LASV_Phylogenetics_Pipeline](https://github.com/JoiRichi/LASV_phylogenetics_pipeline). This is the tree with which conclusions in the manuscript were drawn. Please open the tree file using https://auspice.us/ and use its features to explore the tree.
   
 - **lineage_annotation**: Contains sequence IDs grouped into lineages based on annotated clades from the [Lassa Virus Phylogenetics](https://github.com/JoiRichi/LASV_phylogenetics_pipeline) analysis. These files contain target variables for the [Lassa Virus Lineage Prediction Training](https://colab.research.google.com/drive/1G0lEjuvPR07bcb181Rfhm-S0WenMFSmR) notebook.
 
